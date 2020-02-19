@@ -64,5 +64,3 @@ provision:
   - dip bundle install
   - dip rails new . --webpacker --skip-listen --skip-git
   - dip yarn install
-  - dip sh -c "sed -i -e \"3i\   config.hosts << 'localhost'\" config/environments/development.rb"
-  - dip sh -c "sed -i -e \"4i\   config.web_console.whitelisted_ips = %w( 0.0.0.0/0 ::/0 )\" config/environments/development.rb"
