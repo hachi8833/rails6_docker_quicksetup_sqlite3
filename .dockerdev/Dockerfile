@@ -34,7 +34,8 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrad
   nodejs \
   yarn=$YARN_VERSION-1 \
   $(cat /tmp/Aptfile | xargs) && \
-  npm install -g n \
+  npm install -g n && \
+  n lts && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
   truncate -s 0 /var/log/*log

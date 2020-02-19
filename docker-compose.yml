@@ -7,7 +7,7 @@ x-var: &RUBY_VERSION
 x-var: &NODE_MAJOR
   12
 x-var: &YARN_VERSION
-  1.22.0
+  1.21.1
 x-var: &BUNDLER_VERSION
   2.1.2
 
