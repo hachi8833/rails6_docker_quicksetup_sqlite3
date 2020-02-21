@@ -64,3 +64,5 @@ provision:
   - dip bundle install
   - dip rails new . --webpacker --skip-listen --skip-git
   - dip yarn install
+  - dip sh -c "rails db:prepare 2> /dev/null; exit 0 && rails db:prepare"
+  - dip rails db:test:prepare

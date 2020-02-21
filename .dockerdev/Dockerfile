@@ -2,7 +2,6 @@ ARG RUBY_VERSION
 FROM ruby:$RUBY_VERSION
 
 ARG NODE_MAJOR
-ARG BUNDLER_VERSION
 ARG YARN_VERSION
 
 # Common dependencies
@@ -54,7 +53,6 @@ ENV PATH /app/bin:$PATH
 # Upgrade RubyGems
 RUN gem update --system
 # Uncomment this line if you would like to specify other version of bundler
-# && gem install bundler:$BUNDLER_VERSION
 
 # Create a directory for the app code
 RUN mkdir -p /app
