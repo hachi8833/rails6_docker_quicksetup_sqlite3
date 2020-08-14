@@ -3,11 +3,11 @@ version: "2.4"
 x-var: &APP_IMAGE_TAG
   "my_app:1.0.0"
 x-var: &RUBY_VERSION
-  "2.7.0-slim-buster"
+  "2.7.1-slim-buster"
 x-var: &NODE_MAJOR
   12
 x-var: &YARN_VERSION
-  1.21.1
+  1.22.4
 
 x-app: &app
   build:
